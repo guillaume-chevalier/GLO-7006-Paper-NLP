@@ -38,11 +38,7 @@
   {\tt \small guillaume.chevalier.2@ulaval.ca} \\\And
   Samuel Cabral Cruz \\
   Université Laval \\ Baccalauréat en génie logiciel \\
-  {\tt \small samuel.cabral-cruz.1@ulaval.ca} \And
-  Nadir Belkhiter (Superviseur) \\
-  Université Laval \\ Professeur agrégé \\
-  Membre de l’OIQ \\
-  {\tt \small nadir.belkhiter@ift.ulaval.ca}}
+  {\tt \small samuel.cabral-cruz.1@ulaval.ca}}
 
 \date{}
 
@@ -67,8 +63,21 @@ Une fois que la requête de l'utilisateur aura été convertie sous une forme te
 Malgré le fait que cet article pour sur les approches neuronales, cet outil a plutôt fait la démonstration que des approches plus simplistes sont parfois plus adaptées. Comme le montre la figure ..., Word2vec se fonde sur la combinaison de deux approches nommées skip-gram et bag of words consistant simplement a. \\
 
 \begin{figure}[ht]
-  \includegraphics{./../fig/word2vec}
+  \centering
+  \includegraphics{./../fig/skipgram}
+  %\caption{Figure 1}\label{name1}
 \end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics{./../fig/cbow}
+  %\caption{Figure 1}\label{name1}
+\end{figure}
+
+% \begin{figure*}
+%   \centering
+%   \includegraphics{./../fig/word2vec}
+% \end{figure*}
 
 En fournissant la requête reçue à cet outil, il sera donc possible d'extraire les composantes sémantiques et syntaxiques sous-entendues par cette dernière. Par la suite, ces nouvelles composantes seront combinées à celle que nous avions déjà obtenues à l'étape précédente. En procédant avec cette seconde approche, nous réaliserons certainement un gain majeur au niveau de la performance des prochaines étapes en raison de l'ajout important de dimensionnalités qui fourniront beaucoup plus de flexibilité aux réseaux de neurones suivantes qui devront à leur tour détecter les nuances du langage. À titre d'exemple, lorsqu'un utilisateur demandera à l'assistant si ce dernier peut lui indiquer l'horaire du cinéma le plus prêt de sa position, l'assistant devra comprendre la nuance que ce qui intéresse vraiment l'utilisateur est l'horaire et non pas l'évaluation booléenne de sa capacité à s'acquitter de cette tâche. Par contre, dans le cas où l'utilisateur demanderait à l'assistant si ce dernier peut le connecté à l'Internet, l'assistant devra dans ce cas faire l'évaluation de sa capacité et répondre en par affirmation à notre cher utilisateur. [Référence au transfer learning (TODO)] \\
 
