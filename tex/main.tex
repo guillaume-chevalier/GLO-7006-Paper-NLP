@@ -22,6 +22,7 @@
 \usepackage{url}
 \usepackage{latexsym}
 \usepackage{graphics}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 %\setlength\titlebox{5cm}
 
@@ -58,26 +59,23 @@
 \subsection{Extraction des composantes de l'intrant et des sources d'information à analyser}
 Une fois que la requête de l'utilisateur aura été convertie sous une forme textuelle facilement manipulable par un ordinateur, nous pourrions, dès lors, utiliser le plongement induit par l'étape précédente. Une autre approche consiste à reprendre cette sortie pour ensuite la fournir à une nouvelle structure qui se chargera d'aller extraire de nouvelles composantes qui aideront certainement à obtenir de meilleurs résultats pour la suite du processus. \\
 
-À ce stade, nous devons comprendre que le signal est encore purement textuel et nous n'avons pour seule information qu'une décomposition des mots qui forment la demande reçue. Cependant, les langages sont formés de davantage de subtilités qu'un simple enchaînement de mots les uns après les autres. En effet, chaque mot joue un rôle précis dans la structure de la phrase et apporte une nuance particulière au contexte générale de celle-ci ou encore du texte avec une plus faible portée. C'est exactement ce que les travaux de ... visaient à faire. Ainsi, en ..., ce groupe de chercheurs a fait la publication d'un article détaillant leur approche fondée sur l'utilisation de réseaux de neurones. En plus de faire état de leurs travaux, ce groupe est aussi à l'origine d'outil qui est encore à ce jour considéré comme un incontournable: [WORD2VEC]. \\
+À ce stade, nous devons comprendre que le signal est encore purement textuel et nous n'avons pour seule information qu'une décomposition des mots qui forment la demande reçue. Cependant, les langages sont formés de davantage de subtilités qu'un simple enchaînement de mots les uns après les autres. En effet, chaque mot joue un rôle précis dans la structure de la phrase et apporte une nuance particulière au contexte générale de celle-ci ou encore du texte avec une plus faible portée. C'est exactement ce que les travaux de ... visaient à faire. Ainsi, en ..., ce groupe de chercheurs a fait la publication d'un article détaillant leur approche fondée sur l'utilisation de réseaux de neurones. En plus de faire état de leurs travaux, ce groupe est aussi à l'origine d'outil qui est encore à ce jour considéré comme un incontournable: \cite{word2vec}. \\
 
-Malgré le fait que cet article pour sur les approches neuronales, cet outil a plutôt fait la démonstration que des approches plus simplistes sont parfois plus adaptées. Comme le montre la figure ..., Word2vec se fonde sur la combinaison de deux approches nommées skip-gram et bag of words consistant simplement a. \\
+Malgré le fait que cet article pour sur les approches neuronales, cet outil a plutôt fait la démonstration que des approches plus simplistes sont parfois plus adaptées. Comme le montre les figures \autoref{fig:skipgram} et \autoref{fig:cbow}, Word2vec se fonde sur la combinaison de deux approches nommées skip-gram et bag of words consistant simplement a. \\
 
 \begin{figure}[ht]
   \centering
   \includegraphics{./../fig/skipgram}
-  %\caption{Figure 1}\label{name1}
+  \caption{Architecture de la méthode de prédiction Skip-gram}
+  \label{fig:skipgram}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
   \includegraphics{./../fig/cbow}
-  %\caption{Figure 1}\label{name1}
+  \caption{Architecture de la méthode de prédiction CBOW}
+  \label{fig:cbow}
 \end{figure}
-
-% \begin{figure*}
-%   \centering
-%   \includegraphics{./../fig/word2vec}
-% \end{figure*}
 
 En fournissant la requête reçue à cet outil, il sera donc possible d'extraire les composantes sémantiques et syntaxiques sous-entendues par cette dernière. Par la suite, ces nouvelles composantes seront combinées à celle que nous avions déjà obtenues à l'étape précédente. En procédant avec cette seconde approche, nous réaliserons certainement un gain majeur au niveau de la performance des prochaines étapes en raison de l'ajout important de dimensionnalités qui fourniront beaucoup plus de flexibilité aux réseaux de neurones suivantes qui devront à leur tour détecter les nuances du langage. À titre d'exemple, lorsqu'un utilisateur demandera à l'assistant si ce dernier peut lui indiquer l'horaire du cinéma le plus prêt de sa position, l'assistant devra comprendre la nuance que ce qui intéresse vraiment l'utilisateur est l'horaire et non pas l'évaluation booléenne de sa capacité à s'acquitter de cette tâche. Par contre, dans le cas où l'utilisateur demanderait à l'assistant si ce dernier peut le connecté à l'Internet, l'assistant devra dans ce cas faire l'évaluation de sa capacité et répondre en par affirmation à notre cher utilisateur. [Référence au transfer learning (TODO)] \\
 
@@ -86,6 +84,12 @@ Mais qu'en est-il de nos sources d'informations? En fait, le processus entier b�
 Il y a 2 façons d’avoir l’embedding du corpus de texte (ex: tout wikipédia) lequel sera utilisé pour répondre à la question. Word2vec et infersent. Expliquer les niveaux d’emedding de word2vec et infersent (word-level et sentence-level). Plugger ça dans un RNN ou autre chose, tel que vu à la section suivante.
 
 \subsection{Interprêter la requête et cibler le contenu d'intérêt pour y répondre}
+
+
+% \begin{figure*}
+%   \centering
+%   \includegraphics{./../fig/word2vec}
+% \end{figure*}
 
 \subsection{Formulation d'une réponse à partir de l'information d'intérêt retenur}
 
@@ -96,17 +100,7 @@ Il y a 2 façons d’avoir l’embedding du corpus de texte (ex: tout wikipédia
 \section*{Remerciements}
 
 % include your own bib file like this:
-%\bibliographystyle{acl}
-%\bibliography{acl2014}
-
-\begin{thebibliography}{}
-%Example
-\bibitem[\protect\citename{Aho and Ullman}1972]{Aho:72}
-Alfred~V. Aho and Jeffrey~D. Ullman.
-\newblock 1972.
-\newblock {\em The Theory of Parsing, Translation and Compiling}, volume~1.
-\newblock Prentice-{Hall}, Englewood Cliffs, NJ.
-
-\end{thebibliography}
+\bibliographystyle{acl}
+\bibliography{./../bib/ref}
 
 \end{document}

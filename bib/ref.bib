@@ -1,0 +1,236 @@
+@article{word2vec,
+    author = {Mikolov, Tomas and Chen, Kai and Corrado, G.s and Dean, Jeffrey},
+    year = {2013},
+    title = {Efficient Estimation of Word Representations in Vector Space},
+    journal = {Proceedings of Workshop at ICLR},
+    url = {https://www.researchgate.net/publication/234131319_Efficient_Estimation_of_Word_Representations_in_Vector_Space},
+    abstract = {We propose two novel model architectures for computing continuous vector representations of words from very large datasets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.}}
+
+@article{inferSent,
+    author = {Alexis Conneau and Douwe Kiela and Holger Schwenk and Lo{\"{\i}}c Barrault and Antoine Bordes},
+    title = {Supervised Learning of Universal Sentence Representations from Natural Language Inference Data},
+    journal = {CoRR},
+    volume = {abs/1705.02364},
+    year = {2017},
+    url = {http://arxiv.org/abs/1705.02364},
+    timestamp = {Wed, 07 Jun 2017 14:43:10 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/ConneauKSBB17},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {Many modern NLP systems rely on word embeddings, previously trained in an unsupervised manner on large corpora, as base features. Efforts to obtain embeddings for larger chunks of text, such as sentences, have however not been so successful. Several attempts at learning unsupervised representations of sentences have not reached satisfactory enough performance to be widely adopted. In this paper, we show how universal sentence representations trained using the supervised data of the Stanford Natural Language Inference datasets can consistently outperform unsupervised methods like SkipThought vectors (Kiros et al., 2015) on a wide range of transfer tasks. Much like how computer vision uses ImageNet to obtain features, which can then be transferred to other tasks, our work tends to indicate the suitability of natural language inference for transfer learning to other NLP tasks. Our encoder is publicly available.}}
+
+@article{fastText,
+    author = {Armand Joulin and Edouard Grave and Piotr Bojanowski and Tomas Mikolov},
+    title = {Bag of Tricks for Efficient Text Classification},
+    journal = {CoRR},
+    volume = {abs/1607.01759},
+    year = {2016},
+    url = {http://arxiv.org/abs/1607.01759},
+    timestamp = {Wed, 07 Jun 2017 14:42:39 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/JoulinGBM16},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {This paper explores a simple and efficient baseline for text classification. Our experiments show that our fast text classifier fastText is often on par with deep learning classifiers in terms of accuracy, and many orders of magnitude faster for training and evaluation. We can train fastText on more than one billion words in less than ten minutes using a standard multicore CPU, and classify half a million sentences among 312K classes in less than a minute.}}
+
+@article{sentEval,
+    author = {Douwe Kiela and Alexis Conneau and Allan Jabri and Maximilian Nickel},
+    title = {Learning Visually Grounded Sentence Representations},
+    journal = {CoRR},
+    volume = {abs/1707.06320},
+    year = {2017},
+    url = {http://arxiv.org/abs/1707.06320},
+    timestamp = {Sat, 05 Aug 2017 14:56:17 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/KielaCJN17},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {We introduce a variety of models, trained on a supervised image captioning corpus to predict the image features for a given caption, to perform sentence representation grounding. We train a grounded sentence encoder that achieves good performance on COCO caption and image retrieval and subsequently show that this encoder can successfully be transferred to various NLP tasks, with improved performance over text-only models. Lastly, we analyze the contribution of grounding, and show that word embeddings learned by this system outperform non-grounded ones.}}
+
+@article{attentionMechanism,
+    author = {Dzmitry Bahdanau and Kyunghyun Cho and Yoshua Bengio},
+    title = {Neural Machine Translation by Jointly Learning to Align and Translate},
+    journal = {CoRR},
+    volume = {abs/1409.0473},
+    year = {2014},
+    url = {http://arxiv.org/abs/1409.0473},
+    timestamp = {Wed, 07 Jun 2017 14:40:19 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/BahdanauCB14},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder–decoders and encode a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder–decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.}}
+
+@article{readNcomprehend,
+    author = {Karl Moritz Hermann and Tom{\'{a}}s Kocisk{\'{y}} and Edward Grefenstette and Lasse Espeholt and Will Kay and Mustafa Suleyman and Phil Blunsom},
+    title = {Teaching Machines to Read and Comprehend},
+    journal = {CoRR},
+    volume = {abs/1506.03340},
+    year = {2015},
+    url = {http://arxiv.org/abs/1506.03340},
+    timestamp = {Wed, 07 Jun 2017 14:40:25 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/HermannKGEKSB15},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {Teaching machines to read natural language documents remains an elusive challenge. Machine reading systems can be tested on their ability to answer questions posed on the contents of documents that they have seen, but until now large scale training and test datasets have been missing for this type of evaluation. In this work we define a new methodology that resolves this bottleneck and provides large scale supervised reading comprehension data. This allows us to develop a class of attention based deep neural networks that learn to read real documents and answer complex questions with minimal prior knowledge of language structure.}}
+
+@article{attentionBasedApproaches,
+    author = {Minh{-}Thang Luong and Hieu Pham and Christopher D. Manning},
+    title = {Effective Approaches to Attention-based Neural Machine Translation},
+    journal = {CoRR},
+    volume = {abs/1508.04025},
+    year = {2015},
+    url = {http://arxiv.org/abs/1508.04025},
+    timestamp = {Wed, 07 Jun 2017 14:41:36 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/LuongPM15},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {An attentional mechanism has lately been used to improve neural machine translation (NMT) by selectively focusing on parts of the source sentence during translation. However, there has been little work exploring useful architectures for attention-based NMT. This paper examines two simple and effective classes of attentional mechanism: a global approach which always attends to all source words and a local one that only looks at a subset of source words at a time. We demonstrate the effectiveness of both approaches on the WMT translation tasks between English and German in both directions. With local attention, we achieve a significant gain of 5.0 BLEU points over non-attentional systems that already incorporate known techniques such as dropout. Our ensemble model using different attention architectures yields a new state-of-the-art result in the WMT’15 English to German translation task with 25.9 BLEU points, an improvement of 1.0 BLEU points over the existing best system backed by NMT and an n-gram reranker.}}
+
+@article{squad,
+    author = {Pranav Rajpurkar and Jian Zhang and Konstantin Lopyrev and Percy Liang},
+    title = {SQuAD: 100, 000+ Questions for Machine Comprehension of Text},
+    journal = {CoRR},
+    volume = {abs/1606.05250},
+    year = {2016},
+    url = {http://arxiv.org/abs/1606.05250},
+    timestamp = {Wed, 07 Jun 2017 14:41:34 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/RajpurkarZLL16},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {We present the Stanford Question Answering Dataset (SQuAD), a new reading comprehension dataset consisting of 100,000+ questions posed by crowdworkers on a set of Wikipedia articles, where the answer to each question is a segment of text from the corresponding reading passage. We analyze the dataset to understand the types of reasoning required to answer the questions, leaning heavily on dependency and constituency trees. We build a strong logistic regression model, which achieves an F1 score of 51.0\%, a significant improvement over a simple baseline (20\%). However, human performance (86.8\%) is much higher, indicating that the dataset presents a good challenge problem for future research. The dataset is freely available at https://stanford-qa.com.}}
+
+@article{squad:coattention,
+    author = {Caiming Xiong and Victor Zhong and Richard Socher},
+    title = {Dynamic Coattention Networks For Question Answering},
+    journal = {CoRR},
+    volume = {abs/1611.01604},
+    year = {2016},
+    url = {http://arxiv.org/abs/1611.01604},
+    timestamp = {Wed, 07 Jun 2017 14:42:55 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/XiongZS16},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {Several deep learning models have been proposed for question answering. However, due to their single-pass nature, they have no way to recover from local maxima corresponding to incorrect answers. To address this problem, we introduce the Dynamic Coattention Network (DCN) for question answering. The DCN first fuses co-dependent representations of the question and the document in order to focus on relevant parts of both. Then a dynamic pointing decoder iterates over potential answer spans. This iterative procedure enables the model to recover from initial local maxima corresponding to incorrect answers. On the Stanford question answering dataset, a single DCN model improves the previous state of the art from 71.0\% F1 to 75.9\%, while a DCN ensemble obtains 80.4\% F1.}}
+
+@article{squad:attentionOverAttention,
+    author = {Yiming Cui and Zhipeng Chen and Si Wei and Shijin Wang and Ting Liu and Guoping Hu},
+    title = {Attention-over-Attention Neural Networks for Reading Comprehension},
+    journal = {CoRR},
+    volume = {abs/1607.04423},
+    year = {2016},
+    url = {http://arxiv.org/abs/1607.04423},
+    timestamp = {Wed, 07 Jun 2017 14:42:39 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/CuiCWWLH16},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {Cloze-style reading comprehension is a representative problem in mining relationship between document and query. In this paper, we present a simple but novel model called attention-over-attention reader for better solving cloze-style reading comprehension task. The proposed model aims to place another attention mechanism over the document-level attention and induces “attended attention” for final answer predictions. One advantage of our model is that it is simpler than related works while giving excellent performance. In addition to the primary model, we also propose an N-best re-ranking strategy to double check the validity of the candidates and further improve the performance. Experimental results show that the proposed methods significantly outperform various state-of-the-art systems by a large margin in public datasets, such as CNN and Children’s Book Test.}}
+
+@inproceedings{chatbot:HRED,
+    title={Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models},
+    author={Iulian Serban and Alessandro Sordoni and Yoshua Bengio and Aaron C. Courville and Joelle Pineau},
+    booktitle={Proceedings of the 30th Annual AAAI Conference on Artificial Intelligence},
+    volume = 3776,
+    series = {Special Track on Cognitive Systems},
+    publisher = {AAAI Press},
+    address = {Phoenix, Arizona USA},
+    year={2016},
+    url = {https://www.semanticscholar.org/paper/Building-End-To-End-Dialogue-Systems-Using-Generat-Serban-Sordoni/17f5c7411eeeeedf25b0db99a9130aa353aee4ba?tab=citations},
+    abstract = {We investigate the task of building open domain, conversational dialogue systems based on large dialogue corpora using generative models. Generative models produce system responses that are autonomously generated word-by-word, opening up the possibility for realistic, flexible interactions. In support of this goal, we extend the recently proposed hierarchical recurrent encoder-decoder neural network to the dialogue domain, and demonstrate that this model is competitive with state-of-the-art neural language models and backoff n-gram models. We investigate the limitations of this and similar approaches, and show how its performance can be improved by bootstrapping the learning from a larger question-answer pair corpus and from pretrained word embeddings.}}
+
+@inproceedings{chatbot:LVHRED,
+    title={A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues},
+    author={Iulian Serban and Alessandro Sordoni and Ryan Lowe and Laurent Charlin and Joelle Pineau and Aaron C. Courville and Yoshua Bengio},
+    booktitle={Proceedings of the 31th Annual AAAI Conference on Artificial Intelligence},
+    volume = 3295,
+    series = {Natural Language Processing and Machine Learning},
+    publisher = {AAAI Press},
+    address = {San Francisco, California USA},
+    year={2017},
+    url = {https://www.semanticscholar.org/paper/A-Hierarchical-Latent-Variable-Encoder-Decoder-Mod-Serban-Sordoni/36818eaf6376aeeaffed2523d28bebae7c9db8d7},
+    abstract = {Sequential data often possesses hierarchical structures with complex dependencies between sub-sequences, such as found between the utterances in a dialogue. To model these dependencies in a generative framework, we propose a neural networkbased generative architecture, with stochastic latent variables that span a variable number of time steps. We apply the proposed model to the task of dialogue response generation and compare it with other recent neural-network architectures. We evaluate the model performance through a human evaluation study. The experiments demonstrate that our model improves upon recently proposed models and that the latent variables facilitate both the generation of meaningful, long and diverse responses and maintaining dialogue state.}}
+
+@article{seq2seq,
+    author = {Ilya Sutskever and Oriol Vinyals and Quoc V. Le},
+    title = {Sequence to Sequence Learning with Neural Networks},
+    journal = {CoRR},
+    volume = {abs/1409.3215},
+    year = {2014},
+    url = {http://arxiv.org/abs/1409.3215},
+    timestamp = {Wed, 07 Jun 2017 14:40:10 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/SutskeverVL14},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {Deep Neural Networks (DNNs) are powerful models that have achieved excellent performance on difficult learning tasks. Although DNNs work well whenever large labeled training sets are available, they cannot be used to map sequences to sequences. In this paper, we present a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. Our method uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. Our main result is that on an English to French translation task from the WMT’14 dataset, the translations produced by the LSTM achieve a BLEU score of 34.8 on the entire test set, where the LSTM’s BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did not have difficulty on long sentences. For comparison, a phrase-based SMT system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM to rerank the 1000 hypotheses produced by the aforementioned SMT system, its BLEU score increases to 36.5, which is close to the previous best result on this task. The LSTM also learned sensible phrase and sentence representations that are sensitive to word order and are relatively invariant to the active and the passive voice. Finally, we found that reversing the order of the words in all source sentences (but not target sentences) improved the LSTM’s performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier.}}
+
+@article{limitsLanguageModeling,
+    author = {Rafal J{\'{o}}zefowicz and Oriol Vinyals and Mike Schuster and Noam Shazeer and Yonghui Wu},
+    title = {Exploring the Limits of Language Modeling},
+    journal = {CoRR},
+    volume = {abs/1602.02410},
+    year = {2016},
+    url = {http://arxiv.org/abs/1602.02410},
+    timestamp = {Wed, 07 Jun 2017 14:42:03 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/JozefowiczVSSW16},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {In this work we explore recent advances in Recurrent Neural Networks for large scale Language Modeling, a task central to language understanding. We extend current models to deal with two key challenges present in this task: corpora and vocabulary sizes, and complex, long term structure of language. We perform an exhaustive study on techniques such as character Convolutional Neural Networks or Long-Short Term Memory, on the One Billion Word Benchmark. Our best single model significantly improves state-of-the-art perplexity from 51.3 down to 30.0 (whilst reducing the number of parameters by a factor of 20), while an ensemble of models sets a new record by improving perplexity from 41.0 down to 23.7. We also release these models for the NLP and ML community to study and improve upon.}}
+
+@article{googleTranslate,
+    author = {Yonghui Wu and Mike Schuster and Zhifeng Chen and Quoc V. Le and Mohammad Norouzi and Wolfgang Macherey and Maxim Krikun and Yuan Cao and Qin Gao and Klaus Macherey and Jeff Klingner and Apurva Shah and Melvin Johnson and Xiaobing Liu and Lukasz Kaiser and Stephan Gouws and Yoshikiyo Kato and Taku Kudo and Hideto Kazawa and Keith Stevens and George Kurian and Nishant Patil and Wei Wang and Cliff Young and Jason Smith and Jason Riesa and Alex Rudnick and Oriol Vinyals and Greg Corrado and Macduff Hughes and Jeffrey Dean},
+    title = {Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation},
+    journal = {CoRR},
+    volume = {abs/1609.08144},
+    year = {2016},
+    url = {http://arxiv.org/abs/1609.08144},
+    timestamp = {Wed, 07 Jun 2017 14:41:00 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/WuSCLNMKCGMKSJL16},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {Neural Machine Translation (NMT) is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference – sometimes prohibitively so in the case of very large data sets and large models. Several authors have also charged that NMT systems lack robustness, particularly when input sentences contain rare words. These issues have hindered NMT’s use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google’s Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using residual connections as well as attention connections from the decoder network to the encoder. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units (“wordpieces”) for both input and output. This method provides a good balance between the flexibility of “character”-delimited models and the efficiency of “word”-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. To directly optimize the translation BLEU scores, we consider refining the models by using reinforcement learning, but we found that the improvement in the BLEU scores did not reflect in the human evaluation. On the WMT’14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60\% compared to Google’s phrase-based production system.}}
+
+@article{attentionIsAllYouNeed,
+    author = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
+    title = {Attention Is All You Need},
+    journal = {CoRR},
+    volume = {abs/1706.03762},
+    year = {2017},
+    url = {http://arxiv.org/abs/1706.03762},
+    timestamp = {Mon, 03 Jul 2017 13:29:02 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/VaswaniSPUJGKP17},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.}}
+
+@article{acousticModeling,
+  author = {William Chan and Ian Lane},
+  title = {Deep Recurrent Neural Networks for Acoustic Modelling},
+  journal = {CoRR},
+  volume = {abs/1504.01482},
+  year = {2015},
+  url = {http://arxiv.org/abs/1504.01482},
+  timestamp = {Wed, 07 Jun 2017 14:41:17 +0200},
+  biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/ChanL15a},
+  bibsource = {dblp computer science bibliography, http://dblp.org},
+  abstract = {We present a novel deep Recurrent Neural Network (RNN)
+  model for acoustic modelling in Automatic Speech Recognition
+  (ASR). We term our contribution as a TC-DNN-BLSTM-DNN
+  model, the model combines a Deep Neural Network (DNN)
+  with Time Convolution (TC), followed by a Bidirectional LongShort
+  Term Memory (BLSTM), and a final DNN. The first DNN
+  acts as a feature processor to our model, the BLSTM then generates
+  a context from the sequence acoustic signal, and the final
+  DNN takes the context and models the posterior probabilities of
+  the acoustic states. We achieve a 3.47 WER on the Wall Street
+  Journal (WSJ) eval92 task or more than 8\% relative improvement
+  over the baseline DNN models.}}
+
+@article{wavenet,
+    author = {A{\"{a}}ron van den Oord and Sander Dieleman and Heiga Zen and Karen Simonyan and Oriol Vinyals and Alex Graves and Nal Kalchbrenner and Andrew W. Senior and Koray Kavukcuoglu},
+    title = {WaveNet: {A} Generative Model for Raw Audio},
+    journal = {CoRR},
+    volume = {abs/1609.03499},
+    year = {2016},
+    url = {http://arxiv.org/abs/1609.03499},
+    timestamp = {Wed, 07 Jun 2017 14:42:54 +0200},
+    biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/OordDZSVGKSK16},
+    bibsource = {dblp computer science bibliography, http://dblp.org},
+    abstract = {This paper introduces WaveNet, a deep neural network for generating raw audio waveforms. The model is fully probabilistic and autoregressive, with the predictive distribution for each audio sample conditioned on all previous ones; nonetheless we show that it can be efficiently trained on data with tens of thousands of samples per second of audio. When applied to text-to-speech, it yields state-of-the-art performance, with human listeners rating it as significantly more natural sounding than the best parametric and concatenative systems for both English and Mandarin. A single WaveNet can capture the characteristics of many different speakers with equal fidelity, and can switch between them by conditioning on the speaker identity. When trained to model music, we find that it generates novel and often highly realistic musical fragments. We also show that it can be employed as a discriminative model, returning promising results for phoneme recognition.}}
+
+@article{dnc,
+  author={Alex Graves and Greg Wayne and Malcolm Reynolds and Tim Harley and Ivo Danihelka and Agnieszka Grabska-Barwińska and Sergio Gómez Colmenarejo and Edward Grefenstette and Tiago Ramalho and John Agapiou and Adrià Puigdomènech Badia and Karl Moritz Hermann and Yori Zwols and Georg Ostrovski and Adam Cain and Helen King and Christopher Summerfield and Phil Blunsom and Koray Kavukcuoglu and Demis Hassabis},
+  title={Hybrid computing using a neural network with dynamic external memory},
+  journal={Nature},
+  year={2016},
+  publisher={Macmillan Publishers Limited, part of Springer Nature. All rights reserved.},
+  volume={538},
+  number={7626},
+  pages={471-476},
+  abstract={Artificial neural networks are remarkably adept at sensory processing, sequence learning and reinforcement learning, but are limited in their ability to represent variables and data structures and to store data over long timescales, owing to the lack of an external memory. Here we introduce a machine learning model called a differentiable neural computer (DNC), which consists of a neural network that can read from and write to an external memory matrix, analogous to the random-access memory in a conventional computer. Like a conventional computer, it can use its memory to represent and manipulate complex data structures, but, like a neural network, it can learn to do so from data. When trained with supervised learning, we demonstrate that a DNC can successfully answer synthetic questions designed to emulate reasoning and inference problems in natural language. We show that it can learn tasks such as finding the shortest path between specified points and inferring the missing links in randomly generated graphs, and then generalize these tasks to specific graphs such as transport networks and family trees. When trained with reinforcement learning, a DNC can complete a moving blocks puzzle in which changing goals are specified by sequences of symbols. Taken together, our results demonstrate that DNCs have the capacity to solve complex, structured tasks that are inaccessible to neural networks without external read--write memory.},
+  note={Article},
+  issn={0028-0836},
+  url={http://dx.doi.org/10.1038/nature20101}}
