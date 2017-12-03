@@ -17,12 +17,15 @@
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
-\usepackage{acl2014}
+\usepackage{acl/acl2014}
 \usepackage{times}
 \usepackage{url}
 \usepackage{latexsym}
 \usepackage{graphics}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+
+\addgraphicspath{./fig}
 
 %\setlength\titlebox{5cm}
 
@@ -65,14 +68,14 @@ Malgré le fait que cet article pour sur les approches neuronales, cet outil a p
 
 \begin{figure}[ht]
   \centering
-  \includegraphics{./../fig/skipgram}
+  \includegraphics{skipgram}
   \caption{Architecture de la méthode de prédiction Skip-gram}
   \label{fig:skipgram}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
-  \includegraphics{./../fig/cbow}
+  \includegraphics{cbow}
   \caption{Architecture de la méthode de prédiction CBOW}
   \label{fig:cbow}
 \end{figure}
@@ -88,7 +91,7 @@ Il y a 2 façons d’avoir l’embedding du corpus de texte (ex: tout wikipédia
 
 % \begin{figure*}
 %   \centering
-%   \includegraphics{./../fig/word2vec}
+%   \includegraphics{word2vec}
 % \end{figure*}
 
 \subsection{Formulation d'une réponse à partir de l'information d'intérêt retenur}
@@ -101,6 +104,6 @@ Il y a 2 façons d’avoir l’embedding du corpus de texte (ex: tout wikipédia
 
 % include your own bib file like this:
 \bibliographystyle{acl}
-\bibliography{./../bib/ref}
+\bibliography{bib/ref}
 
 \end{document}
