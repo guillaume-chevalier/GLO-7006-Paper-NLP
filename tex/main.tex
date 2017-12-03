@@ -59,7 +59,7 @@
 \section{Développement}
 \subsection{Traitement d'un intrant vocal}
 
-\subsection{Extraire des composantes de l'intrant et de la source d'information}
+\subsection{Extraction des composantes de l'intrant et des sources d'information à analyser}
 Une fois que la requête de l'utilisateur aura été convertie sous une forme textuelle facilement manipulable par un ordinateur, nous pourrions, dès lors, utiliser le plongement induit par l'étape précédente. Une autre approche consiste à reprendre cette sortie pour ensuite la fournir à une nouvelle structure qui se chargera d'aller extraire de nouvelles composantes qui aideront certainement à obtenir de meilleurs résultats pour la suite du processus. \\
 
 À ce stade, nous devons comprendre que le signal est encore purement textuel et nous n'avons pour seule information qu'une décomposition des mots qui forment la demande reçue. Cependant, les langages sont formés de davantage de subtilités qu'un simple enchaînement de mots les uns après les autres. En effet, chaque mot joue un rôle précis dans la structure de la phrase et apporte une nuance particulière au contexte générale de celle-ci ou encore du texte avec une plus faible portée. C'est exactement ce que les travaux de ... visaient à faire. Ainsi, en ..., ce groupe de chercheurs a fait la publication d'un article détaillant leur approche fondée sur l'utilisation de réseaux de neurones. En plus de faire état de leurs travaux, ce groupe est aussi à l'origine d'outil qui est encore à ce jour considéré comme un incontournable: [WORD2VEC]. \\
@@ -76,9 +76,9 @@ Mais qu'en est-il de nos sources d'informations? En fait, le processus entier b�
 
 Il y a 2 façons d’avoir l’embedding du corpus de texte (ex: tout wikipédia) lequel sera utilisé pour répondre à la question. Word2vec et infersent. Expliquer les niveaux d’emedding de word2vec et infersent (word-level et sentence-level). Plugger ça dans un RNN ou autre chose, tel que vu à la section suivante.
 
-\subsection{Interprêter la demande et cibler le contenu d'intérêt pour y répondre}
+\subsection{Interprêter la requête et cibler le contenu d'intérêt pour y répondre}
 
-\subsection{Formulation d'une réponse à partir de l'information retenue}
+\subsection{Formulation d'une réponse à partir de l'information d'intérêt retenur}
 
 \subsection{Retourner la réponse textuelle sous la forme d'un signal audio}
 
