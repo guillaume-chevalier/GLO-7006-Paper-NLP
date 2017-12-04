@@ -27,6 +27,19 @@
 
 \graphicspath{{./fig/}{.}}
 
+\usepackage[toc,nonumberlist]{glossaries}
+\AtBeginDocument{%
+	\setlength\LTleft{0pt}
+	\setlength\LTright{0pt}
+	\setlength\glsdescwidth{0.8\hsize}
+	\renewcommand{\glsnamefont}[1]{\textbf{#1}}
+	\renewcommand*{\glossaryname}{Liste des symboles et abréviations}}
+\makeglossaries
+% \renewcommand{\acronymname}{}
+\loadglsentries{gls/glossary}
+\glsaddall
+
+
 %\setlength\titlebox{5cm}
 
 % You can expand the titlebox if you need extra space
