@@ -133,7 +133,8 @@
  \begingroup
    \def\thefootnote{\fnsymbol{footnote}}
    \def\@makefnmark{\hbox to 0pt{$^{\@thefnmark}$\hss}}
-   \twocolumn[\@maketitle] \@thanks
+   %\twocolumn[\@maketitle] \@thanks
+   \@maketitle \@thanks
  \endgroup
  \setcounter{footnote}{0}
  \let\maketitle\relax \let\@maketitle\relax
@@ -165,7 +166,7 @@
 		 {\unskip\end{list}}
 		     
 %\renewenvironment{abstract}{\centerline{\large\bf  
-% Abstract}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex}
+% abstract}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex}
 
 
 % bibliography
