@@ -209,6 +209,25 @@
     bibsource = {dblp computer science bibliography, http://dblp.org},
     abstract = {Deep Neural Networks (DNNs) are powerful models that have achieved excellent performance on difficult learning tasks. Although DNNs work well whenever large labeled training sets are available, they cannot be used to map sequences to sequences. In this paper, we present a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. Our method uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. Our main result is that on an English to French translation task from the WMT’14 dataset, the translations produced by the LSTM achieve a BLEU score of 34.8 on the entire test set, where the LSTM’s BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did not have difficulty on long sentences. For comparison, a phrase-based SMT system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM to rerank the 1000 hypotheses produced by the aforementioned SMT system, its BLEU score increases to 36.5, which is close to the previous best result on this task. The LSTM also learned sensible phrase and sentence representations that are sensitive to word order and are relatively invariant to the active and the passive voice. Finally, we found that reversing the order of the words in all source sentences (but not target sentences) improved the LSTM’s performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier.}}
 
+@article{DeanMapReduce,
+ author = {Dean, Jeffrey and Ghemawat, Sanjay},
+ title = {MapReduce: Simplified Data Processing on Large Clusters},
+ journal = {Commun. ACM},
+ issue_date = {January 2008},
+ volume = {51},
+ number = {1},
+ month = jan,
+ year = {2008},
+ issn = {0001-0782},
+ pages = {107--113},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/1327452.1327492},
+ doi = {10.1145/1327452.1327492},
+ acmid = {1327492},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
 @article{limitsLanguageModeling,
     author = {Rafal J{\'{o}}zefowicz and Oriol Vinyals and Mike Schuster and Noam Shazeer and Yonghui Wu},
     title = {Exploring the Limits of Language Modeling},
@@ -279,17 +298,3 @@
     biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/OordDZSVGKSK16},
     bibsource = {dblp computer science bibliography, http://dblp.org},
     abstract = {This paper introduces WaveNet, a deep neural network for generating raw audio waveforms. The model is fully probabilistic and autoregressive, with the predictive distribution for each audio sample conditioned on all previous ones; nonetheless we show that it can be efficiently trained on data with tens of thousands of samples per second of audio. When applied to text-to-speech, it yields state-of-the-art performance, with human listeners rating it as significantly more natural sounding than the best parametric and concatenative systems for both English and Mandarin. A single WaveNet can capture the characteristics of many different speakers with equal fidelity, and can switch between them by conditioning on the speaker identity. When trained to model music, we find that it generates novel and often highly realistic musical fragments. We also show that it can be employed as a discriminative model, returning promising results for phoneme recognition.}}
-
-@article{dnc,
-  author={Alex Graves and Greg Wayne and Malcolm Reynolds and Tim Harley and Ivo Danihelka and Agnieszka Grabska-Barwińska and Sergio Gómez Colmenarejo and Edward Grefenstette and Tiago Ramalho and John Agapiou and Adrià Puigdomènech Badia and Karl Moritz Hermann and Yori Zwols and Georg Ostrovski and Adam Cain and Helen King and Christopher Summerfield and Phil Blunsom and Koray Kavukcuoglu and Demis Hassabis},
-  title={Hybrid computing using a neural network with dynamic external memory},
-  journal={Nature},
-  year={2016},
-  publisher={Macmillan Publishers Limited, part of Springer Nature. All rights reserved.},
-  volume={538},
-  number={7626},
-  pages={471-476},
-  abstract={Artificial neural networks are remarkably adept at sensory processing, sequence learning and reinforcement learning, but are limited in their ability to represent variables and data structures and to store data over long timescales, owing to the lack of an external memory. Here we introduce a machine learning model called a differentiable neural computer (DNC), which consists of a neural network that can read from and write to an external memory matrix, analogous to the random-access memory in a conventional computer. Like a conventional computer, it can use its memory to represent and manipulate complex data structures, but, like a neural network, it can learn to do so from data. When trained with supervised learning, we demonstrate that a DNC can successfully answer synthetic questions designed to emulate reasoning and inference problems in natural language. We show that it can learn tasks such as finding the shortest path between specified points and inferring the missing links in randomly generated graphs, and then generalize these tasks to specific graphs such as transport networks and family trees. When trained with reinforcement learning, a DNC can complete a moving blocks puzzle in which changing goals are specified by sequences of symbols. Taken together, our results demonstrate that DNCs have the capacity to solve complex, structured tasks that are inaccessible to neural networks without external read--write memory.},
-  note={Article},
-  issn={0028-0836},
-  url={http://dx.doi.org/10.1038/nature20101}}
