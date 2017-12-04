@@ -1,0 +1,9 @@
+\subsection{Traitement d'un intrant vocal}
+La première étape de calcul au sein d’une architecture neurale destinée à comprendre et répondre à un utilisateur est justement de comprendre ce qu’il dit. Pour accomplir cette tâche, il est possible d’utiliser un réseaux de neurones \gls{tc}-\gls{dnn}-\gls{bilstm}-\gls{dnn}, c’est-à-dire des convolutions temporelles (\gls{tc}) suivies de couches de neurones linéaires profondes (\gls{dnn}), d’un \gls{lstm} Bidirectionnel (\gls{bilstm}) et puis d’un second \gls{dnn} \cite{acousticModeling}. Ainsi, cette architecture dépend d’un pré-traitement du signal par un autre algorithme lequel est plus classique et permet de transformer le signal en un domaine de fréquences personnalisées. C’est ce pré-traitement de l’information qui est introduit dans le réseau de neurones profonds, afin d’en analyser le sens et de le pouvoir convertir en états acoustiques, lesquels peuvent être convertis, cette fois, en texte littéraire. Cette architecture neurale, imagée à la \autoref{fig:tcDnnBlstmDnn}, obtient un \gls{wer} de retranscription de 3.47, ce qui est présentement le \gls{sota} sur le jeu de données du problème du \gls{wsj} eval’92.
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\textwidth]{tcDnnBlstmDnn}
+  \caption{L’architecture neurale \gls{tc}-\gls{dnn}-\gls{bilstm}-\gls{dnn} permet d’écouter le signal sonore à l’aide des données audio extraites en \gls{fmllr}. Ainsi, un \gls{dnn} suivi d’un \gls{bilstm} peut analyser ce signal pour classifier le tout en états acoustiques, lesquels sont eux-mêmes repris par un algorithme classique qui permet de rassembler ces états en mots réels. Notons que cette architecture neurale peut être utilisée pour raffiner le signal des mots prononcés, ce qui peut être envoyé directement dans un réseaux de neurones supérieur en tant que \textit{embedding}. [\citenum{acousticModeling}]}
+  \label{fig:tcDnnBlstmDnn}
+\end{figure*}
