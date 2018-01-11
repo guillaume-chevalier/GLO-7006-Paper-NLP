@@ -9,12 +9,16 @@ Please note that all the pictures are not published here under the license of th
 
 ### Guillaume Chevalier
 Université Laval
+
 Baccalauréat en génie logiciel 
+
 guillaume.chevalier.2@ulaval.ca
 
 ### Samuel Cabral Cruz
 Université Laval
+
 Baccalauréat en génie logiciel
+
 samuel.cabral-cruz.1@ulaval.ca
 
 ### Abstract
